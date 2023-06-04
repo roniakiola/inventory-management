@@ -1,8 +1,8 @@
 public class Inventory
 {
   private static Inventory instance;
-  private Dictionary<string, Item> items;
-  private int maxCapacity;
+  public Dictionary<string, Item> items;
+  public int maxCapacity;
 
   private Inventory(int maxCapacity)
   {
@@ -24,6 +24,10 @@ public class Inventory
 
   public bool AddItem(Item item, int quantity)
   {
+    if (quantity <= 0)
+    {
+      return false;
+    }
     if (items.ContainsKey(item.Barcode))
     {
       items[item.Barcode].IncreaseQuantity(quantity);
