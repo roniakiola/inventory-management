@@ -1,8 +1,8 @@
 public class Item
 {
-  string _barcode;
-  string _name;
-  int _quantity;
+  private string _barcode;
+  private string _name;
+  private int _quantity;
 
   public Item(string _barcode, string _name, int _quantity)
   {
