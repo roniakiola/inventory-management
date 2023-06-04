@@ -1,6 +1,10 @@
 # Inventory Management
 In this assignment, you will create a simple inventory management system which allows users to add, remove, and view items in the inventory.
 
+## Technologies
+
+C#
+
 ## Requirements
 
 Create class `Item`, which has barcode, name and quantity, which are private. Each item should have unique barcode, and quantity can not be negative. Provide the following methods:
